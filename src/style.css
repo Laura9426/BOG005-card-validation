@@ -1,0 +1,73 @@
+h1{
+font-size: 30px;
+color: black; 
+background-color: white; 
+border: 2px solid blue;
+text-align: center; 
+
+}
+
+#contenedor{
+width: 700px;
+border: 2px dotted blue;
+padding: 20px 20px;  
+margin: auto;
+font-size: 20px;
+text-align: center;
+
+}
+
+.col{
+    display:inline-block; /*para poner un div al lado del otro*/
+    width: 45%;
+}
+
+.col input{
+    width: 90%;
+}
+
+.col label{
+    text-align: left;
+}
+
+
+/*diseño botones de pago*/ 
+
+#metopago input[type=radio]
+{
+/*para posicionar el radio*/    
+position: absolute; 
+/*para poner transparente el radio*/
+opacity: 0;
+}
+
+#metopago label  {
+border: 1px solid grey; /*borde al label*/  
+display: inline-block; /*ajusta al tamaño de la imagen*/  
+}
+
+/*llamo label porque cada imagen esta dentro de uno*/
+
+
+#metopago label img{
+    /*para que el cursor cambie cuando me paro sobre la imagen*/
+    cursor: pointer;
+}
+
+#metopago input[type=radio]:checked+label /*Cuando el input este check ponga 
+estos estilos al label*/
+{
+border: 1px solid blue; 
+box-shadow: 0 0 3px black; /*sombra*/
+}
+
+#validar{
+    color: black;
+    background-color: orange;
+    border: 2px solid black;
+    border-radius: 20px; /*esquinas redondas*/
+    padding: 8px 30px;
+    font-size: 15px;
+    font-weight: bold; /*letra negrilla*/
+    cursor: pointer;
+    }
