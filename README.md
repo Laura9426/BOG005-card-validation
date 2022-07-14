@@ -12,7 +12,7 @@ Forma de pago o recarga de billetera de una pagina de trade (inversiones financi
 
   El programa da un espacio seguro de transpaso de dinero, verificando si su tarjeta de credito es valida o no.
 
-*Foto del prototipo.
+* Foto del prototipo:
 
 ![Prototipo primera imagen!](/imagenes/prototipo.png "Prototipo primera imagen!")
 
@@ -20,10 +20,12 @@ Forma de pago o recarga de billetera de una pagina de trade (inversiones financi
 
 
 
-*Agregar un resumen del feedback recibido indicando las mejoras a realizar.
+* Agregar un resumen del feedback recibido indicando las mejoras a realizar.
 
-*Imagen del prototipo final.
+* Imagen del prototipo final:
+
+![prototipo final!](/imagenes/proyectofinal_1.jpg "prototipo final!")
 
 ![prototipo final!](/imagenes/proyectofinal.png "prototipo final!")
 
-![prototipo final!](/imagenes/proyectofinal_1.jpg "prototipo final!")
+
