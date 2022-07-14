@@ -1,22 +1,34 @@
+body {
+
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: cover;
+}
+
 h1{
 font-size: 30px;
-color: black; 
+color: blue; 
 background-color: white; 
-border: 2px solid blue;
 text-align: center; 
+text-transform: uppercase; /*mayusculas*/
 
 }
 
 #contenedor{
 width: 700px;
-border: 2px dotted blue;
+border: 0px dotted blue;
 padding: 20px 20px;  
-margin: auto;
+margin: 30px auto;
 font-size: 20px;
 text-align: center;
+background: rgba(255, 255, 255, 0.70);
+box-shadow: 0 0 8px rgba(0, 0, 0, 0.30);
+border-radius: 50px ;
 
 }
 
+
+
+/* diseño de inputs de recibir informacion*/
 .col{
     display:inline-block; /*para poner un div al lado del otro*/
     width: 45%;
@@ -24,11 +36,15 @@ text-align: center;
 
 .col input{
     width: 90%;
+    border-radius: 10px;
+    height: 25px; /*alto de los input*/
+    border: 1px dotted gray;
 }
 
 .col label{
     text-align: left;
 }
+
 
 
 /*diseño botones de pago*/ 
@@ -43,7 +59,8 @@ opacity: 0;
 
 #metopago label  {
 border: 1px solid grey; /*borde al label*/  
-display: inline-block; /*ajusta al tamaño de la imagen*/  
+display: inline-block; /*ajusta al tamaño de la imagen*/
+border-radius: 10px;  
 }
 
 /*llamo label porque cada imagen esta dentro de uno*/
@@ -52,22 +69,64 @@ display: inline-block; /*ajusta al tamaño de la imagen*/
 #metopago label img{
     /*para que el cursor cambie cuando me paro sobre la imagen*/
     cursor: pointer;
+    border-radius: 10px;
 }
 
 #metopago input[type=radio]:checked+label /*Cuando el input este check ponga 
 estos estilos al label*/
 {
 border: 1px solid blue; 
-box-shadow: 0 0 3px black; /*sombra*/
+box-shadow: 0 0 3px black; /*sombra cuando escojo la imagen*/
 }
 
 #validar{
     color: black;
     background-color: orange;
-    border: 2px solid black;
-    border-radius: 20px; /*esquinas redondas*/
+    border: 1px solid black;
+    border-radius: 10px 0px; /*esquinas redondas*/
     padding: 8px 30px;
     font-size: 15px;
     font-weight: bold; /*letra negrilla*/
     cursor: pointer;
+    margin-top: 30px;
+    text-transform: uppercase;
     }
+    #validar:hover{ /*cuando pase el cursor encima*/
+
+        background-color: greenyellow; 
+        }    
+
+#volver{
+    color: black;
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 10px 0px; /*esquinas redondas*/
+    padding: 8px 30px;
+    font-size: 15px;
+    font-weight: bold; /*letra negrilla*/
+    cursor: pointer;
+    margin-top: 30px;
+    text-transform: uppercase;
+    }
+    #volver:hover{ /*cuando pase el cursor encima*/
+
+        background-color: greenyellow;
+        }    
+
+
+#volver1{
+    color: black;
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 10px 0px; /*esquinas redondas*/
+    padding: 8px 30px;
+    font-size: 15px;
+    font-weight: bold; /*letra negrilla*/
+    cursor: pointer;
+    margin-top: 30px;
+    text-transform: uppercase;
+    }
+    #volver1:hover{ /*cuando pase el cursor encima*/
+
+        background-color: greenyellow;
+         }    

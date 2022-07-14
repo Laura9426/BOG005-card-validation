@@ -7,7 +7,7 @@
   </head>
   <body>
    
-    <div id="contenedor">
+<div id="contenedor">
 
     <header><h1>Recarga tu cuenta</h1></header>
 
@@ -15,10 +15,11 @@
       
       <p> <em>Los pagos son <b>100%</b> seguros</em> </p>
       
+  <div id="pagInicial">
+
       <p>Elija un método de pago:</p>
 
       <div id="metopago">
-
       <input type="radio" id="PSE" name="pay" value="PSE">
       <label for="PSE"><img src="\imagenes/PSE.jpg" width="100"></label>
 
@@ -27,13 +28,11 @@
 
       <input type="radio" id="paypal" name="pay" value="PayPal">
       <label for="paypal"><img src="\imagenes/Paypal.jpg" width="100"></label><br><br><br>
-
       </div>
 
       <div id="cajas">
 
         <div class="col">
-
           <label >Cantidad</label><br>
           <input type="text" id="cantidad"><br><br>
 
@@ -42,11 +41,9 @@
 
           <label>Número de tarjeta</label><br>
           <input type="text" id="numero"><br><br>
-
         </div>
 
         <div class="col">
-
           <p>Fecha de vencimiento</p>
           
           <div class="col">
@@ -62,25 +59,36 @@
       
           <label>CVV</label><br>
           <input type="text" id="codigo"><br><br>
-          
-
         </div>
         
-    </div>
+      </div>
 
     <button id="validar">Depositar</button><br><br><br>
 
+  </div>
 
     <div id = "captura"></div>
-    <div id = "mascara"></div>
 
+    
+    <div id="valido"><img src="/imagenes/valido.jpg"<br><br>
+      <div id = "mascara"></div><br><br>
+      <button id="volver">Nueva recarga</button><br><br><br>
     </div>
+
+    <div id="inValido"><img src="/imagenes/invalido.jpg"<br><br>
+      <button id="volver1">Volvel a intentar</button><br><br><br>
+    </div>
+
+    
+
+
+</div> 
 
     </main>
     <footer></footer>
 
 
     <script src="index.js" type="module"></script>
-    <script src="validator.js" type="module"></script>
+    
   </body>
 </html>

@@ -1,4 +1,4 @@
-/*const validator = {
+const validator = {
 
     isValid(creditCardNumber){
 
@@ -26,12 +26,7 @@
             }
 
             ultimoDigito = totalSuma.toString()[totalSuma.toString().length-1];
-            
-            alert(tarjetaNum2);
-            alert(totalSuma);
-            alert(ultimoDigito);
-
-
+          
             if(ultimoDigito=="0"){
 
               return true;
@@ -40,6 +35,33 @@
               return false;
             }
             
+      },
+
+      maskify(creditCardNumber){
+
+        var size = creditCardNumber.length;  
+        var part1 = "";
+        var part2 = "";
+          
+          if(size > 4){
+
+            part1 = creditCardNumber.substring(0,size-4);
+
+            part2 = creditCardNumber.substring(size-4,size);
+
+            let part1_1 = "";
+                        
+            for(var l=0;l<part1.length;l++){
+
+              part1_1 = part1_1 + "#"; //o se hace asi tambien part1_1 += "#";
+        
+            }
+           return part1_1 + part2;
+          }
+
+          else{
+            return creditCardNumber;
+          }
       }
 
 
