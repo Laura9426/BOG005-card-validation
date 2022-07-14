@@ -39,6 +39,7 @@ border-radius: 50px ;
     border-radius: 10px;
     height: 25px; /*alto de los input*/
     border: 1px dotted gray;
+    text-align: center;
 }
 
 .col label{
@@ -130,3 +131,12 @@ box-shadow: 0 0 3px black; /*sombra cuando escojo la imagen*/
 
         background-color: greenyellow;
          }    
+
+#mascara{
+
+    color: grey;
+    text-size-adjust: 5px;
+    
+}
+
+/*4137894711755904*/

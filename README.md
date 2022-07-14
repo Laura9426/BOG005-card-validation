@@ -17,5 +17,4 @@ Luego colocarás la foto de tu primer prototipo en papel.
 Agregar un resumen del feedback recibido indicando las mejoras a realizar.
 Imagen del prototipo final.
 
-
-   
+![The San Juan Mountains are beautiful!](/imagenes/prototipo.png "San Juan Mountains")

@@ -19,7 +19,7 @@ boton[0].addEventListener('click',  function ()
 
     document.getElementById("valido").style.display = "block";
 
-    document.getElementById('mascara').innerHTML= "Su numero de tarjeta termina en " + validator.maskify(numeroCard) ;
+    document.getElementById('mascara').innerHTML= "El número de tarjeta termina en " + validator.maskify(numeroCard) ;
 
   }
 
@@ -32,10 +32,25 @@ boton[0].addEventListener('click',  function ()
 
 });
 
-boton[0].addEventListener('click',  function ()
+boton[1].addEventListener('click',  function ()
 {
 
+  document.getElementById("valido").style.display = "none";
+  document.getElementById("pagInicial").style.display = "block";
+  document.getElementById("numero").value = "";
+  document.getElementById("name").value = "";
+  document.getElementById("cantidad").value = "";
+  document.getElementById("mes").value = "";
+  document.getElementById("year").value = "";
+  document.getElementById("codigo").value = "";
 
+});
+
+boton[2].addEventListener('click',  function ()
+{
+
+  document.getElementById("inValido").style.display = "none";
+  document.getElementById("pagInicial").style.display = "block";
 
 });
 

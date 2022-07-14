@@ -40,7 +40,7 @@
           <input type="text" id="name"><br><br>
 
           <label>Número de tarjeta</label><br>
-          <input type="text" id="numero"><br><br>
+          <input type="text" id="numero" maxlength="16"/><br><br>
         </div>
 
         <div class="col">
@@ -48,22 +48,22 @@
           
           <div class="col">
               <label >MM</label><br>
-              <input type="text" id="mes">
+              <input type="text" id="mes"  maxlength="2"/>
           </div>
-
+          
           <div class="col">
               <label >YYYY</label><br>
-              <input type="text" id="year">
+              <input type="text" id="year" maxlength="4"/>
           </div>
           <br><br>
       
           <label>CVV</label><br>
-          <input type="text" id="codigo"><br><br>
+          <input type="text" id="codigo" maxlength="3"/><br><br>
         </div>
         
       </div>
 
-    <button id="validar">Depositar</button><br><br><br>
+    <button id="validar" type="submit">Depositar</button><br><br><br>
 
   </div>
 
