@@ -8,9 +8,19 @@ const validator = {
 
         var numero1 = 0;
 
-        for(var i=0;i<16;i++){
+        var reves = "";
 
-                if (i==0||i==2||i==4||i==6||i==8||i==10||i==12||i==14){
+        for(var h=creditCardNumber.length;h>0;h--){
+
+          reves += creditCardNumber[h-1];
+
+        }
+
+        creditCardNumber = reves;
+
+        for(var i=0;i<creditCardNumber.length;i++){
+
+                if (i==1||i==3||i==5||i==7||i==9||i==11||i==13||i==15){
 
                     numero1 = parseInt(creditCardNumber[i])*2;
                 } 
