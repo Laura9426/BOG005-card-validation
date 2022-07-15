@@ -7,8 +7,11 @@ const validator = {
        var ultimoDigito="";
 
         var numero1 = 0;
-
         var reves = "";
+
+        if(creditCardNumber.length == 0){
+          return false;
+        }
 
         for(var h=creditCardNumber.length;h>0;h--){
 
@@ -30,12 +33,16 @@ const validator = {
                 tarjetaNum2 = tarjetaNum2 + numero1.toString();
             }
 
+            alert(tarjetaNum2);
+
             for(var j=0;j<tarjetaNum2.length;j++){  //lenght mide la longitud de la cadena
 
               totalSuma += parseInt(tarjetaNum2[j]); //es igual q en la suma de arriba
             }
 
             ultimoDigito = totalSuma.toString()[totalSuma.toString().length-1];
+
+            alert(ultimoDigito);
           
             if(ultimoDigito=="0"){
 
