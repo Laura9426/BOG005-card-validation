@@ -1,94 +1,95 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-   
-<div id="contenedor">
 
-    <header><h1>Recarga tu cuenta</h1></header>
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="contenedor">
+
+    <header>
+      <h1>Recarga tu cuenta</h1>
+    </header>
 
     <main>
-      
+
       <p> <em>Los pagos son <b>100%</b> seguros</em> </p>
-      
-  <div id="pagInicial">
 
-      <p>Elija un método de pago:</p>
+      <div id="pagInicial">
 
-      <div id="metopago">
-      <input type="radio" id="PSE" name="pay" value="PSE">
-      <label for="PSE"><img src="/imagenes/PSE.jpg" width="100"  alt="PSE"></label>
+        <p>Elija un método de pago:</p>
 
-      <input type="radio" id="credit" name="pay" value="Credit card">
-      <label for="credit"><img src="/imagenes/tarjeta.jpg" width="100" alt="Tarjeta de credito"></label>
+        <div id="metopago">
+          <input type="radio" id="PSE" name="pay" value="PSE">
+          <label for="PSE"><img src="/imagenes/PSE.jpg" width="100" alt="PSE"></label>
 
-      <input type="radio" id="paypal" name="pay" value="PayPal">
-      <label for="paypal"><img src="/imagenes/Paypal.jpg" width="100" alt="Paypal"></label><br><br><br>
-      </div>
+          <input type="radio" id="credit" name="pay" value="Credit card">
+          <label for="credit"><img src="/imagenes/tarjeta.jpg" width="100" alt="Tarjeta de credito"></label>
 
-      <div id="cajas">
-
-        <div class="col">
-          <label >Cantidad</label><br>
-          <input type="text" id="cantidad"><br><br>
-
-          <label>Nombre en la tarjeta</label><br>
-          <input type="text" id="name"><br><br>
-
-          <label>Número de tarjeta</label><br>
-          <input type="text" id="numero" maxlength="16"/><br><br>
+          <input type="radio" id="paypal" name="pay" value="PayPal">
+          <label for="paypal"><img src="/imagenes/Paypal.jpg" width="100" alt="Paypal"></label><br><br><br>
         </div>
 
-        <div class="col">
-          <p>Fecha de vencimiento</p>
-          
+        <div id="cajas">
+
           <div class="col">
-              <label >MM</label><br>
-              <input type="text" id="mes"  maxlength="2"/>
+            <label>Cantidad</label><br>
+            <input type="text" id="cantidad"><br><br>
+
+            <label>Nombre en la tarjeta</label><br>
+            <input type="text" id="name"><br><br>
+
+            <label>Número de tarjeta</label><br>
+            <input type="text" id="numero" maxlength="16" /><br><br>
           </div>
-          
+
           <div class="col">
-              <label >YYYY</label><br>
-              <input type="text" id="year" maxlength="4"/>
+            <p>Fecha de vencimiento</p>
+
+            <div class="col">
+              <label>MM</label><br>
+              <input type="text" id="mes" maxlength="2" />
+            </div>
+
+            <div class="col">
+              <label>YYYY</label><br>
+              <input type="text" id="year" maxlength="4" />
+            </div>
+            <br><br>
+
+            <label>CVV</label><br>
+            <input type="text" id="codigo" maxlength="3" /><br><br>
           </div>
-          <br><br>
-      
-          <label>CVV</label><br>
-          <input type="text" id="codigo" maxlength="3"/><br><br>
+
         </div>
-        
+
+        <button id="validar" type="submit">Depositar</button><br><br><br>
+
       </div>
 
-    <button id="validar" type="submit">Depositar</button><br><br><br>
-
-  </div>
-
-    <div id = "captura"></div>
-
-    
-    <div id="valido"><img src="/imagenes/valido.jpg" alt="Su deposito ha sido exitoso"<br><br>
-      <div id = "mascara"></div><br><br>
-      <button id="volver">Nueva recarga</button><br><br><br>
-    </div>
-
-    <div id="inValido"><img src="/imagenes/invalido.jpg"  alt="tarjeta de credito invalida"<br><br>
-      <button id="volver1">Volvel a intentar</button><br><br><br>
-    </div>
-
-    
+      <div id="captura"></div>
 
 
-</div> 
+      <div id="valido"><img src="/imagenes/valido.jpg" alt="Su deposito ha sido exitoso"><br><br>
+        <div id="mascara"></div><br><br>
+        <button id="volver">Nueva recarga</button><br><br><br>
+      </div>
+
+      <div id="inValido"><img src="/imagenes/invalido.jpg" alt="tarjeta de credito invalida"><br><br>
+        <button id="volver1">Volvel a intentar</button><br><br><br>
+      </div>
 
     </main>
-    <footer></footer>
+  </div>
+  <footer></footer>
 
 
-    <script src="index.js" type="module"></script>
-    
-  </body>
+  <script src="index.js" type="module"></script>
+
+</body>
+
 </html>
